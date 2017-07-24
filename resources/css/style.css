@@ -1,0 +1,28 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  color: white;
+}
+
+.site-container {
+  margin: 0 auto;
+  width: 960px;
+}
+
+header {
+  background-color: black;
+}
+
+header img {
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
+
+header span {
+  font-family: Helvetica;
+  font-size: 1rem;
+  padding: 0.66rem 0;
+  text-transform: uppercase;
+}
