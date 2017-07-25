@@ -24,7 +24,6 @@ header .logo img {
 header .logo span {
   font-family: Helvetica;
   font-size: 1rem;
-  text-transform: uppercase;
 }
 
 header .logo {
@@ -37,4 +36,31 @@ header .logo {
   height: 25rem;
   background: url("../images/moto.jpeg") no-repeat center;
   background-size: cover;
+  display: flex;
+}
+
+.promotion {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  margin: 9rem 0;
+}
+
+.promotion span {
+  margin-left: 3rem;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+span.promo-title {
+  margin-top: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+nav {
+  display: flex;
+  background-color: firebrick;
+  justify-content: space-between;
+  padding: 0.75rem 0;
 }
