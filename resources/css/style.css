@@ -7,9 +7,12 @@ body {
 }
 
 .site-container {
-  display: flex;
   margin: 0 auto;
   max-width: 960px;
+}
+
+.flex {
+  display: flex;
 }
 
 header {
@@ -60,11 +63,15 @@ p.promo-item {
   font-size: 2rem;
 }
 
+
+.nav-banner {
+  background-color: firebrick;
+}
+
 nav {
   display: flex;
-  background-color: firebrick;
-  justify-content: space-between;
   padding: 0.75rem 0;
+  justify-content: space-between;
 }
 
 nav span a {
