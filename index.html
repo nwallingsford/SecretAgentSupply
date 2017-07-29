@@ -5,6 +5,7 @@
     <title>Secret Agent Supply Inc.</title>
     <link rel="stylesheet" href="resources/css/reset.css" type="text/css">
     <link rel="stylesheet" href="resources/css/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <!-- Header section -->
@@ -28,7 +29,8 @@
       <!-- Site nav -->
       <div class="nav-banner">
         <div class="site-container">
-        <nav>
+        <!-- Desktop Nav for screens > 1024px -->
+        <nav class="nav-desktop">
           <span><a href="#">Eyewear</a></span>
           <span><a href="#">Apparel</a></span>
           <span><a href="#">Gadgets</a></span>
@@ -36,27 +38,32 @@
           <span><a href="#">Classes</a></span>
           <span><a href="#">Contact</a></span>
         </nav>
+        <!-- Tablet Nav for screens <= 1024px -->
+        <nav class="nav-tablet">
+          <span><a href="#">Menu</a></span>
+        </nav>
+        </nav>
         </div>
       </div>
     <!-- Product section -->
       <div class="product-grid">
         <div class="site-container flex space-between">
           <!-- Exploding pen product -->
-          <div class="product-container">
+          <div class="product-container" id="pen">
             <div class="product-item">
               <img src="resources/images/pen.png" alt="An exploding pen">
               <span>Exploding Pen</span>
             </div>
           </div>
           <!-- Cellular watch product -->
-          <div class="product-container">
+          <div class="product-container" id="watch">
             <div class="product-item">
               <img src="resources/images/watch.png" alt="An exploding pen">
               <span>Cellular Watch</span>
             </div>
           </div>
           <!-- Thermal glasses product -->
-          <div class="product-container">
+          <div class="product-container" id="glasses">
             <div class="product-item">
               <img src="resources/images/glasses.png" alt="An exploding pen">
               <span>Thermal Glasses</span>
@@ -68,6 +75,7 @@
       <div class="store-container">
         <div class="site-container">
           <div class="location-container">
+            <!-- Location -->
             <div id="location">
               <div class="location-title">
                 <span>Location</span>
@@ -76,6 +84,7 @@
                 <span>-47.346436, 84.32354</span>
               </div>
             </div>
+            <!-- Hours -->
             <div id="hours">
               <div class="location-title">
                 <span>Hours</span>

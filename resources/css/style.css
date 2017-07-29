@@ -71,7 +71,7 @@ p.promo-item {
   background-color: firebrick;
 }
 
-nav {
+.nav-desktop {
   display: flex;
   padding: 0.75rem 0;
   justify-content: space-between;
@@ -80,6 +80,10 @@ nav {
 nav span a {
   color: white;
   text-decoration: none;
+}
+
+.nav-tablet {
+  display: none;
 }
 
 .product-container {
@@ -140,4 +144,26 @@ footer .copyright {
   display: flex;
   align-items: center;
   padding: 2.5rem 0;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .nav-desktop {
+    display: none;
+  }
+
+  .nav-tablet {
+    display: flex;
+    padding: 0.75rem 0;
+    justify-content: center;
+  }
+
+  #glasses {
+    display: none;
+  }
+
+  .product-container {
+    width: 47%;
+  }
+
 }
