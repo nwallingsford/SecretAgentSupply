@@ -141,10 +141,10 @@ footer {
 }
 
 footer .copyright {
-  display: flex;
-  align-items: center;
   padding: 2.5rem 0;
 }
+
+/* Tablet media query */
 
 @media only screen and (max-width: 1024px) {
 
@@ -164,6 +164,55 @@ footer .copyright {
 
   .product-container {
     width: 47%;
+  }
+
+}
+
+/* Mobile media query */
+
+@media only screen and (max-width: 470px) {
+
+  #watch {
+    display: none;
+  }
+
+  p.promo-title {
+    font-size: 0.77rem;
+  }
+
+  p.promo-item {
+    font-size: 1rem;
+  }
+
+  .promotion {
+    margin-top: 10rem;
+    padding: 1rem 2rem;
+  }
+
+  .main-banner {
+    height: 15rem;
+  }
+
+  .product-container {
+    width: 90%;
+  }
+
+  .space-between {
+    justify-content: center;
+  }
+
+  .location-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #location, #hours {
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
+
+  footer .copyright {
+    text-align: center;
   }
 
 }
