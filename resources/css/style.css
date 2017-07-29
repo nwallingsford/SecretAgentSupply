@@ -15,6 +15,10 @@ body {
   display: flex;
 }
 
+.space-between {
+  justify-content: space-between;
+}
+
 header {
   background-color: black;
 }
@@ -63,7 +67,6 @@ p.promo-item {
   font-size: 2rem;
 }
 
-
 .nav-banner {
   background-color: firebrick;
 }
@@ -77,4 +80,51 @@ nav {
 nav span a {
   color: white;
   text-decoration: none;
+}
+
+.product-container {
+  border: solid 4px black;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-item img {
+  height: 9rem;
+  padding: 2rem 0;
+}
+
+.product-item span {
+  background-color: black;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.location-container {
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  width: 35%;
+  flex-direction: column;
+}
+
+.location-title {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px yellow;
+}
+
+.location-title span {
+  background: black;
+  padding: 1rem 0 1rem 2rem;
+}
+
+.location-destination {
+  color: black;
 }
