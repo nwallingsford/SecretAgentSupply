@@ -110,8 +110,11 @@ nav span a {
   display: flex;
   margin-top: 3rem;
   margin-bottom: 4rem;
+  justify-content: space-between;
+}
+
+#location, #hours {
   width: 35%;
-  flex-direction: column;
 }
 
 .location-title {
@@ -127,4 +130,14 @@ nav span a {
 
 .location-destination {
   color: black;
+}
+
+footer {
+  background-color: black;
+}
+
+footer .copyright {
+  display: flex;
+  align-items: center;
+  padding: 2.5rem 0;
 }
